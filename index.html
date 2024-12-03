@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Project Novia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Indonesian Traditional Cuisine</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#islands">Island in Indonesia</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello, my name is Novia. I’m a beginner web developer passionate about learning new technologies. Additionally, I have a deep interest in the richness of Indonesian traditional cuisine and plan to express this passion through my first web project here. Enjoy exploring my first web project! 😊</p>
+    </section>
+    <section id="islands">
+        <h2>Island in Indonesia</h2>
+        <div class="island-container">
+            <div class="island">
+                <a href="javascript:void(0);" onclick="showProvinces('sumatera')">
+                    <img src="images/Sumatera.jpg" alt="Sumatera">
+                    <p>Sumatera</p>
+                </a>
+            </div>
+            <div class="island">
+                <a href="javascript:void(0);" onclick="showProvinces('jawa')">
+                    <img src="images/Jawa.jpg" alt="Jawa">
+                    <p>Jawa</p>
+                </a>
+            </div>
+            <div class="island">
+                <a href="javascript:void(0);" onclick="showProvinces('kalimantan')">
+                    <img src="images/Kalimantan.jpg" alt="Kalimantan">
+                    <p>Kalimantan</p>
+                </a>
+            </div>
+            <div class="island">
+                <a href="javascript:void(0);" onclick="showProvinces('sulawesi')">
+                    <img src="images/Sulawesi.jpg" alt="Sulawesi">
+                    <p>Sulawesi</p>
+                </a>
+            </div>
+            <div class="island">
+                <a href="javascript:void(0);" onclick="showProvinces('bali')">
+                    <img src="images/Bali.jpg" alt="Bali">
+                    <p>Bali & Nusa Tenggara</p>
+                </a>
+            </div>
+            <div class="island">
+                <a href="javascript:void(0);" onclick="showProvinces('papua')">
+                    <img src="images/Papua.jpg" alt="Papua">
+                    <p>Papua & Maluku</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Daftar Provinsi dan Makanan Sumatera -->
+        <div id="sumatera-provinces" class="province-list" style="display: none;">
+            <h3>Provinsi di Sumatera</h3>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showFoods('aceh')">Aceh</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('sumut')">Sumatera Utara</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('sumbar')">Sumatera Barat</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('riau')">Riau</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('kepri')">Kepulauan Riau</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('jambi')">Jambi</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('sumsel')">Sumatera Selatan</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('lampung')">Lampung</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('babel')">Bangka Belitung</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('bengkulu')">Bengkulu</a></li>
+            </ul>
+        </div>
+        <div id="aceh-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Aceh</h3>
+    <ul>
+        <li>
+            <h4>Ayam Tangkap</h4>
+            <img src="images/ayam tangkap.jpg" alt="Ayam Tangkap" style="width:200px; height:auto; margin:10px 0;">
+            <p>Ayam Tangkap, a traditional Acehnese dish, is celebrated for its rich spices, unique presentation, and cultural roots. Originating from Aceh's rural lifestyle, it features free-range chicken fried with aromatic herbs like curry and pandan leaves. Historically a festive dish, it now enjoys nationwide popularity, showcasing Aceh's culinary heritage.</p>
+        </li>
+        <li>
+            <h4>Mie Aceh</h4>
+            <img src="images/mie aceh.jpg" alt="Mie Aceh" style="width:200px; height:auto; margin:10px 0;">
+            <p>Mie Aceh is a traditional noodle dish from Aceh, Indonesia, influenced by Indian, Arab, and Malay cuisines. Originating in the 19th century, it combines Chinese-style noodles with bold spices like curry and cardamom. Served as stir-fried (goreng), sautéed (tumis), or in curry broth (kuah), it features toppings like beef, seafood, or goat. Mie Aceh is a culinary icon, showcasing Aceh's rich history and cultural diversity.</p>
+        </li>
+		<li>
+            <h4>Kuah Beulangong</h4>
+            <img src="images/kuah beulangong.jpg" alt="Kuah Beulangong" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kuah Beulangong, a traditional Acehnese curry, is cooked in large cauldrons for cultural ceremonies and celebrations. It symbolizes community togetherness, featuring beef or goat, spices, and young jackfruit. This dish reflects Aceh's rich heritage and remains central to its cultural identity.</p>
+        </li>
+		<li>
+            <h4>Eungkot Keumamah</h4>
+            <img src="images/eungkot keumamah.jpg" alt="eungkot keumamah" style="width:200px; height:auto; margin:10px 0;">
+            <p>Eungkot Keumamah, or "ikan kayu", is a traditional Acehnese dish made from dried skipjack tuna cooked with rich local spices. Originating during times of war, it served as durable food for Acehnese warriors due to its long shelf life. The dish symbolizes resilience and local wisdom, retaining its cultural significance as both a beloved delicacy and a heritage of Aceh.</p>
+        </li>
+		<li>
+            <h4>Sate Matang</h4>
+            <img src="images/sate matang.jpg" alt="sate matang" style="width:200px; height:auto; margin:10px 0;">
+            <p>Sate Matang, originating in Matang Geulumpang Dua, Aceh, is a traditional satay dish made from grilled goat or beef served with spiced peanut sauce and savory broth. Introduced by street vendors in the 1970s, it reflects Aceh's rich culinary heritage and is now popular across Indonesia.</p>
+        </li>
+		<li>
+            <h4>Timphan</h4>
+            <img src="images/timphan.jpg" alt="timphan" style="width:200px; height:auto; margin:10px 0;">
+            <p>Timphan is a cherished Acehnese delicacy, especially during Islamic celebrations like Eid. Rooted in Aceh's Malay and Middle Eastern heritage, its name stems from "timpa," meaning "to pound," reflecting its preparation process. Made from glutinous rice flour dough with fillings like srikaya or banana, it is wrapped in banana leaves and steamed. Timphan symbolizes hospitality, respect, and togetherness, remaining a cultural icon in Aceh's culinary traditions.</p>
+        </li>
+		<li>
+            <h4>Roti Cane</h4>
+            <img src="images/roti cane.jpg" alt="roti cane" style="width:200px; height:auto; margin:10px 0;">
+            <p>Roti Cane, influenced by Indian and Middle Eastern cultures, is a traditional Acehnese bread introduced by South Indian and Middle Eastern traders centuries ago. Adapted into Aceh’s culinary tradition, it is enjoyed with goat or chicken curry or sweet toppings like sugar and condensed milk. Made from wheat flour dough, it is fried until golden, with flaky layers that are crispy outside and soft inside. This dish reflects Aceh’s rich cultural history and its openness to external influences.</p>
+        </li>
+		<li>
+            <h4>Bohromrom</h4>
+            <img src="images/bohromrom.jpg" alt="bohromrom" style="width:200px; height:auto; margin:10px 0;">
+            <p>Bohromrom, also called "boh duek beudeh" or "klepon", is a beloved Acehnese sticky rice cake filled with palm sugar and coated in grated coconut. Known for its chewy texture and sweet filling, it symbolizes togetherness in Acehnese culture and is enjoyed daily or during special ceremonies. Its green pandan hue and unique local flavors preserve its role as a cherished culinary heritage.</p>
+        </li>
+		<li>
+            <h4>Sie Reuboh</h4>
+            <img src="images/sie reuboh.jpg" alt="sie reuboh" style="width:200px; height:auto; margin:10px 0;">
+            <p>Sie Reuboh, meaning "boiled meat," is a traditional Acehnese dish with roots in rural life, created to preserve meat without refrigeration. It combines beef or goat meat with vinegar (asam sunti) and spices like turmeric, garlic, and pepper, giving it a sour, savory, and spicy flavor. Traditionally prepared during Eid al-Adha, it symbolizes resilience and cultural heritage, often served at communal events and ceremonies. This practical dish lasts weeks without refrigeration, reflecting the wisdom of Acehnese food preservation.</p>
+        </li>
+		<li>
+            <h4>Soto Aceh</h4>
+            <img src="images/soto aceh.jpg" alt="soto aceh" style="width:200px; height:auto; margin:10px 0;">
+            <p>Soto Aceh is a traditional soup dish from Aceh, Indonesia, known for its rich, spicy flavor. Made with beef or chicken, it features a broth infused with a blend of local spices like turmeric, ginger, and lemongrass. Often served with rice or noodles, Soto Aceh is garnished with fried shallots, lime, and chili sauce, reflecting the bold and aromatic Acehnese culinary heritage.</p>
+        </li>
+		<li>
+            <h4>Bubur Kanji Rumbi</h4>
+            <img src="images/bubur kanji rumbi.jpg" alt="bubur kanji rumbi" style="width:200px; height:auto; margin:10px 0;">
+            <p>Bubur Kanji Rumbi is a traditional Acehnese rice porridge known for its rich and aromatic flavor. Made with rice cooked in coconut milk and seasoned with spices like turmeric, lemongrass, and bay leaves, it is often mixed with shredded chicken or seafood. This dish is commonly served during Ramadan as a nutritious and comforting iftar meal, reflecting Aceh's culinary and cultural heritage.</p>
+        </li>
+		<li>
+            <h4>Kuah Pliek U</h4>
+            <img src="images/kuah pliek u.jpg" alt="Kuah Pliek U" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kuah Pliek U, a traditional Acehnese dish, showcases the region's rich culinary culture. Made with pliek u (fermented coconut residue) and various vegetables, it offers a distinct savory and spicy flavor. Historically served at communal events, it symbolizes togetherness and reflects the Acehnese value of utilizing natural resources. Today, it remains a celebrated cultural icon in Aceh.</p>
+        </li>
+    </ul>
+</div>
+        <div id="sumut-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Sumatera Utara</h3>
+    <ul>
+        <li>
+            <h4>Naniura</h4>
+            <img src="images/naniura.jpg" alt="naniura" style="width:200px; height:auto; margin:10px 0;">
+            <p>Naniura is a traditional dish from North Sumatra, particularly from the Batak Toba tribe. Often called "Batak sashimi," it consists of raw fish marinated in spices and cured with acidic fruit juice, such as jeruk jungga. Historically, Naniura was reserved for Batak nobles and kings, symbolizing the Batak people's culinary skills and use of natural ingredients. The dish uses carp from Lake Toba and local spices like andaliman, garlic, ginger, and turmeric. Over time, it became more widely enjoyed at ceremonies and celebrations. Naniura is a unique, flavorful dish, reflecting the Batak's cultural heritage and connection with nature.</p>
+        </li>
+        <li>
+            <h4>Babi Panggang Karo (BPK)</h4>
+            <img src="images/babi panggang karo.jpg" alt="babi panggang karo" style="width:200px; height:auto; margin:10px 0;">
+            <p>Babi Panggang Karo (BPK) is a traditional dish from North Sumatra, specifically from the Karo ethnic group. Made from roasted pork served with a spicy sambal andaliman, BPK is a key part of Karo culture and is often served at ceremonies like weddings and harvest festivals. The dish features crispy skin and tender meat, with sambal andaliman adding a unique spicy flavor. BPK also pairs with supa, a pork blood soup. Passed down through generations, BPK remains a cherished culinary tradition, representing Karo's cultural heritage.</p>
+        </li>
+        <li>
+            <h4>Dali Ni Horbo</h4>
+            <img src="images/dali ni horbo.jpg" alt="dali ni horbo" style="width:200px; height:auto; margin:10px 0;">
+            <p>Dali Ni Horbo is a traditional Batak dish from North Sumatra made from buffalo milk. Originating from the Batak people's practice of preserving milk, it is often served at ceremonial events as a symbol of fertility and prosperity. The dish is made by thickening buffalo milk using papaya leaves or pineapple juice, then cooking it with spices for a savory, slightly spicy flavor. Dali Ni Horbo is an important part of Batak cultural heritage, still featured in traditional rituals and events today.</p>
+        </li>
+        <li>
+            <h4>Itak Gurgur</h4>
+            <img src="images/itak gurgur.jpg" alt="itak gurgur" style="width:200px; height:auto; margin:10px 0;">
+            <p>Itak Gurgur is a traditional Batak dish from North Sumatra, made from rice flour, grated coconut, and palm sugar. It is shaped into small pieces and serves as a symbol of fertility, life, and community in Batak ceremonies. The name "Itak Gurgur" refers to rice flour and the "spirited" nature of the dish. Its sweet, coconut-flavored taste reflects Batak cultural values, and it remains an important part of ceremonies, embodying togetherness and prosperity.</p>
+        </li>
+        <li>
+            <h4>Mie Gomak</h4>
+            <img src="images/mie gomak.jpg" alt="mie gomak" style="width:200px; height:auto; margin:10px 0;">
+            <p>Mie Gomak is a traditional Batak Toba dish from North Sumatra, often called "Batak spaghetti" due to its thick noodles. The name "gomak" refers to the traditional practice of eating the noodles by hand. It has been a part of local life for generations, served at ceremonies, gatherings, and sold in markets. Made with mie lidi (thick noodles), it comes in two versions: with a rich coconut milk broth and fried with simpler spices. Key ingredients include andaliman pepper, turmeric, garlic, and lemongrass, giving the dish a unique spicy, tingling flavor. Mie Gomak reflects Batak cultural identity and is a beloved dish at traditional events.</p>
+        </li>
+        <li>
+            <h4>Bika Ambon</h4>
+            <img src="images/bika ambon.jpg" alt="bika ambon" style="width:200px; height:auto; margin:10px 0;">
+            <p>Bika Ambon is a traditional cake from Medan, North Sumatra, known for its spongy texture and sweet flavor. Despite its name, it is not from Ambon but Medan. It became popular in the early 20th century, with theories suggesting the name came from Ambon Street or an influence from Maluku cakes. Made from sago flour, coconut milk, sugar, eggs, and yeast, Bika Ambon is characterized by its porous texture and pandan aroma, achieved through fermentation and careful baking. It is a popular souvenir and an important part of Medan’s culinary heritage.</p>
+        </li>
+        <li>
+            <h4>Lontong Medan</h4>
+            <img src="images/lontong medan.jpg" alt="lontong medan" style="width:200px; height:auto; margin:10px 0;">
+            <p>Lontong Medan is a traditional dish from Medan, North Sumatra, known for its diverse flavors and ingredients. Originating from Medan’s multicultural influences (Malay, Chinese, Indian, Batak), it began as lontong with coconut milk vegetable curry but evolved with additional side dishes like tauco shrimp, sambal teri kacang, eggs in spicy sauce, and serundeng. Served with rice wrapped in banana leaves, it includes savory elements like fermented soybean paste and spicy anchovy-peanut sambal. Lontong Medan reflects Medan's cultural fusion and is a symbol of its rich culinary heritage, popular among locals and visitors alike.</p>
+        </li>
+        <li>
+            <h4>Soto Medan</h4>
+            <img src="images/soto medan.jpg" alt="soto medan" style="width:200px; height:auto; margin:10px 0;">
+            <p>Soto Medan, a traditional dish from Medan, North Sumatra, is a flavorful soup with a coconut milk-based broth, giving it a thicker, savory taste. Influenced by Malay, Indian, Chinese, and Batak cultures, it evolved from regional soto recipes. Commonly served with beef, chicken, or shrimp, it includes spices like lemongrass, turmeric, and galangal. Often enjoyed during special events, Soto Medan reflects Medan's diverse culinary heritage and remains a signature dish of the region.</p>
+        </li>
+        <li>
+            <h4>Teri Medan</h4>
+            <img src="images/teri medan.jpg" alt="teri medan" style="width:200px; height:auto; margin:10px 0;">
+            <p>Teri Medan is a small anchovy from Medan, North Sumatra, known for its crispy texture and savory taste. Sourced from the Malacca Strait, it has been a local livelihood for generations. Traditionally dried by fishermen, its high quality has led to large-scale production and wide use in Indonesian dishes like sambal teri Medan, sayur lodeh, and nasi uduk. Teri Medan is prized for its small size, crispiness, and balanced flavor. It has become both a popular culinary ingredient and a key export, representing North Sumatra’s marine heritage.</p>
+        </li>
+        <li>
+            <h4>Manuk Napinandar</h4>
+            <img src="images/manuk napinandar.jpg" alt="manuk napinandar" style="width:200px; height:auto; margin:10px 0;">
+            <p>Manuk Napindar is a traditional Batak dish from North Sumatra made from chicken and seasoned with chicken blood, spices, and herbs. The dish has been a part of Batak culture for centuries, often served during ceremonies and rituals as a symbol of respect for ancestors. The chicken is typically free-range, and the blood is mixed with spices like andaliman, garlic, and ginger to create a flavorful sauce. Manuk Napindar reflects the Batak people's belief in the sacredness of blood and remains a key part of their culinary heritage, served at cultural events and celebrations.</p>
+        </li>
+        <li>
+            <h4>Anyang Pakis</h4>
+            <img src="images/anyang pakis.jpg" alt="anyang pakis" style="width:200px; height:auto; margin:10px 0;">
+            <p>Anyang Pakis is a traditional dish from North Sumatra, made from young fern shoots cooked with grated coconut, spices, and lime or tamarind. Originating from the Mandailing and Malay regions, it reflects the region’s abundant ferns and rich culinary traditions. The dish is flavored with spices like lemongrass, chili, and garlic, and is often served at cultural events. While it can be made with other ingredients, ferns remain the most common. Anyang Pakis symbolizes the natural wealth and cultural heritage of North Sumatra.</p>
+        </li>
+        <li>
+            <h4>Kue Ombus-Ombus</h4>
+            <img src="images/kue ombus ombus.jpg" alt="kue ombus ombus" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kue Ombus-Ombus is a traditional steamed cake from Tapanuli, North Sumatra, made from glutinous rice, grated coconut, and brown sugar. Its name, "Ombus-Ombus," means "steamed cake" in Batak. The cake, known for its soft, chewy texture and sweet flavor, is often served at ceremonies, weddings, and family gatherings. Wrapped in banana leaves, it gains a unique aroma and maintains moisture during steaming. Kue Ombus-Ombus is an important part of North Sumatra's culinary heritage, reflecting the region's cultural practices.</p>
+        </li>
+        <li>
+            <h4>Lapet</h4>
+            <img src="images/lapet.jpg" alt="lapet" style="width:200px; height:auto; margin:10px 0;">
+            <p>Lapet is a traditional steamed cake from North Sumatra, specifically Tapanuli, made with glutinous rice, grated coconut, and brown sugar. Its name, derived from the Batak language, means "steamed cake." Lapet is commonly served at weddings, thanksgiving, and other celebrations. Wrapped in banana leaves, it has a soft, chewy texture and a sweet flavor, with the leaves adding aroma and moisture. As a symbol of Tapanuli's culinary heritage, Lapet remains an important part of local culture and is enjoyed during traditional events.</p>
+        </li>
+        <li>
+            <h4>Durian Medan</h4>
+            <img src="images/durian medan.jpg" alt="durian medan" style="width:200px; height:auto; margin:10px 0;">
+            <p>Medan Durian, a renowned variety from North Sumatra, is known for its high quality and unique taste. Grown in Medan since the Dutch colonial era, it gained recognition in the mid-20th century due to favorable climate and soil conditions. Its thick skin, golden yellow creamy flesh, and strong aroma distinguish it from other durians. Medan Durian is famous for its sweet, savory, and slightly bitter flavor. It plays a significant role in local culinary traditions and is often featured in social events, representing the region's rich heritage and gaining international popularity.</p>
+        </li>
+        <li>
+            <h4>Kue Putu</h4>
+            <img src="images/kue putu.jpg" alt="kue putu" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kue Putu is a traditional snack from North Sumatra, often enjoyed for its unique taste and texture. Made from rice flour and filled with palm sugar, this steamed cake is typically served with grated coconut on top. It has a soft, chewy texture and a sweet, slightly salty flavor. Putu is popular at local markets and during celebrations, representing the region's rich culinary heritage. It is a beloved snack in North Sumatra and has gained recognition in other parts of Indonesia for its delicious taste and simple preparation.</p>
+        </li>
+        <li>
+            <h4>Arsik</h4>
+            <img src="images/arsik.jpg" alt="arsik" style="width:200px; height:auto; margin:10px 0;">
+            <p>Arsik is a traditional dish from North Sumatra, especially among the Batak Toba people. Made with carp and a special yellow spice blend, it is often served at ceremonies and celebrations. The dish features spices like turmeric, garlic, ginger, shallots, and andaliman (Batak pepper), giving it a unique spicy, sour, and savory flavor. Arsik holds cultural significance, symbolizing respect and honor, especially when served whole at important events. It remains a key part of Batak culinary and cultural heritage.</p>
+        </li>
+        <li>
+            <h4>Laksa Medan</h4>
+            <img src="images/laksa medan.jpg" alt="laksa medan" style="width:200px; height:auto; margin:10px 0;">
+            <p>Laksa Medan is a traditional noodle dish from North Sumatra, known for its rich and flavorful broth. Made with thick rice noodles, it is served in a spicy, aromatic coconut milk-based soup, often with fish or shrimp, boiled eggs, and garnished with herbs. Laksa Medan is famous for its balanced mix of spicy, sour, and savory flavors. Popular in Medan and surrounding areas, it is a beloved dish that reflects the region’s diverse culinary influences, blending local ingredients and traditional cooking methods. Laksa Medan is often enjoyed during meals and special occasions.</p>
+        </li>
+        <li>
+            <h4>Saksang</h4>
+            <img src="images/saksang.jpg" alt="saksang" style="width:200px; height:auto; margin:10px 0;">
+            <p>Saksang is a traditional Batak dish from North Sumatra, made with pork, dog, or buffalo meat, cooked with blood and spices like andaliman, garlic, ginger, and lemongrass. It has deep cultural significance, often served at important Batak ceremonies such as weddings and funerals, symbolizing respect for ancestors. The blood enhances the dish's flavor and texture. Saksang reflects Batak identity and tradition, passed down through generations as a vital part of their cultural heritage.</p>
+        </li>
+    </ul>
+</div>
+        <div id="sumbar-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Sumatera Barat</h3>
+    <ul>
+        <li>
+           <h4>Rendang</h4>
+            <img src="images/rendang.jpg" alt="rendang" style="width:200px; height:auto; margin:10px 0;">
+            <p>Rendang is a renowned traditional dish from West Sumatra, celebrated worldwide for its rich flavors and tender texture. Made from beef slow-cooked in coconut milk and a blend of spices like turmeric, ginger, garlic, and chili, it has a deep, savory taste with a hint of spiciness. Originating from Minangkabau culture, Rendang symbolizes patience and tradition, often served at ceremonies and special occasions. This iconic dish is not only a staple of Indonesian cuisine but has also gained global recognition as one of the most delicious foods in the world.</p>
+        </li>
+        <li>
+           <h4>Sate Padang</h4>
+            <img src="images/sate padang.jpg" alt="sate padang" style="width:200px; height:auto; margin:10px 0;">
+            <p>Sate Padang is a traditional satay dish from West Sumatra, known for its flavorful spices and unique sauce. Made from tender pieces of beef, chicken, or offal, the skewered meat is grilled and served with a thick, spicy turmeric-based sauce. Originating from Minangkabau culinary traditions, Sate Padang is distinguished by its bold, savory flavors and is often accompanied by rice cakes. This dish is a popular street food and a symbol of West Sumatra’s rich food heritage, loved both locally and across Indonesia.</p>
+        </li>
+        <li>
+           <h4>Dendeng Balado</h4>
+            <img src="images/dendeng balado.jpg" alt="dendeng balado" style="width:200px; height:auto; margin:10px 0;">
+            <p>Dendeng Balado is a traditional dish from West Sumatra, featuring thinly sliced, sun-dried beef cooked with a spicy chili sauce. The beef is fried until crispy, then coated in a mixture of red chilies, garlic, and lime, creating a bold, tangy, and savory flavor. Originating from Minangkabau cuisine, Dendeng Balado is a staple in West Sumatran households and is often served as a side dish during meals. Its vibrant taste and rich spices make it a beloved dish throughout Indonesia, showcasing the region's culinary excellence.</p>
+        </li>
+        <li>
+           <h4>Gulai Tambusu</h4>
+            <img src="images/gulai tambusu.jpg" alt="gulai tambusu" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Tambusu is a unique traditional dish from West Sumatra, made with cow or goat intestines stuffed with a mixture of spiced egg and tofu. The stuffed intestines are simmered in a rich, flavorful coconut milk-based curry infused with local spices like turmeric, lemongrass, and galangal. This dish is a highlight of Minangkabau cuisine, known for its creamy texture and savory taste. Often served during special occasions, Gulai Tambusu reflects the creativity and complexity of West Sumatran culinary traditions.</p>
+        </li>
+        <li>
+           <h4>Gulai Itiak</h4>
+            <img src="images/gulai itiak.jpg" alt="gulai itiak" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Itiak is a traditional duck curry from West Sumatra, known for its rich and flavorful broth. The duck is simmered in a coconut milk-based curry, flavored with a blend of spices such as turmeric, ginger, garlic, and chili. This dish is a specialty of Minangkabau cuisine, prized for its tender duck meat and aromatic, spicy sauce. Gulai Itiak is commonly served during special occasions and represents the bold, savory flavors of West Sumatran culinary traditions.</p>
+        </li>
+        <li>
+           <h4>Ayam Pop</h4>
+            <img src="images/ayam pop.jpg" alt="ayam pop" style="width:200px; height:auto; margin:10px 0;">
+            <p>Ayam Pop is a famous traditional dish from West Sumatra, known for its simplicity and unique flavor. This dish features chicken that is boiled with coconut water and spices, then lightly fried for a tender, juicy texture with a subtle taste. Unlike other fried chicken dishes, Ayam Pop is less oily and is typically served with sambal merah (spicy red chili sauce) and steamed rice. Originating from Minangkabau cuisine, Ayam Pop is a popular dish in Padang restaurants, loved for its light and flavorful profile.</p>
+        </li>
+        <li>
+           <h4>Soto Padang</h4>
+            <img src="images/soto padang.jpg" alt="soto padang" style="width:200px; height:auto; margin:10px 0;">
+            <p>Soto Padang is a traditional soup from West Sumatra, known for its rich, aromatic broth made from beef and various spices. The soup features tender beef slices, glass noodles, and is typically served with a side of rice cakes. Infused with turmeric, ginger, and other spices, Soto Padang has a savory and slightly spicy flavor. This dish is a beloved part of Minangkabau cuisine, enjoyed for its comforting and flavorful taste, and is often served during meals or special events in West Sumatra.</p>
+        </li>
+        <li>
+           <h4>Ikan Bakar Padang</h4>
+            <img src="images/ikan bakar padang.jpg" alt="ikan bakar padang" style="width:200px; height:auto; margin:10px 0;">
+            <p>Ikan Bakar Padang is a traditional grilled fish dish from West Sumatra, known for its bold flavors and smoky aroma. The fish, often mackerel or other local varieties, is marinated in a mixture of turmeric, chili, garlic, and other spices before being grilled to perfection. The result is a tender, flavorful fish with a spicy and slightly tangy taste. A popular dish in Minangkabau cuisine, Ikan Bakar Padang is commonly served with steamed rice and sambal, reflecting the region’s love for spicy, aromatic foods.</p>
+        </li>
+        <li>
+           <h4>Gulai Kepala Ikan</h4>
+            <img src="images/gulai kepala ikan.jpg" alt="gulai kepala ikan" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Kepala Ikan is a traditional fish head curry from West Sumatra, known for its rich and flavorful coconut milk-based broth. The fish head, typically from tuna or other local varieties, is simmered with a blend of spices such as turmeric, ginger, garlic, and chili, creating a savory and spicy dish. This iconic dish of Minangkabau cuisine is often enjoyed with rice and represents the region's bold and aromatic culinary traditions. Gulai Kepala Ikan is cherished for its tender fish head and delicious, aromatic sauce.</p>
+        </li>
+        <li>
+           <h4>Kalio</h4>
+            <img src="images/kalio.jpg" alt="kalio" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kalio is a traditional dish from West Sumatra, similar to rendang but with a lighter, less thick sauce. Made with beef or buffalo meat, it is cooked in coconut milk and a mix of aromatic spices like turmeric, ginger, and garlic. The meat is simmered until tender, with the sauce remaining slightly runny. Kalio is often enjoyed with rice and is a popular dish in Minangkabau cuisine, offering a savory, mildly spicy flavor that highlights the region’s rich culinary traditions. It is commonly served during special occasions and meals.</p>
+        </li>
+        <li>
+           <h4>Pangek Padeh</h4>
+            <img src="images/pangek padeh.jpg" alt="pangek padeh" style="width:200px; height:auto; margin:10px 0;">
+            <p>Pangek Padeh is a traditional dish from West Sumatra, featuring fish cooked in a spicy, sour, and aromatic curry. Typically made with fish like carp or snapper, it is simmered in a sauce of coconut milk, turmeric, chili, and tamarind, giving it a unique balance of heat and tanginess. This dish is a staple of Minangkabau cuisine, known for its bold flavors and vibrant color. Pangek Padeh is often served with steamed rice and is cherished for its rich, flavorful broth and tender fish.</p>
+        </li>
+        <li>
+           <h4>Gulai Paku</h4>
+            <img src="images/gulai paku.jpg" alt="gulai paku" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Paku is a traditional dish from West Sumatra, featuring ferns cooked in a rich, aromatic coconut milk-based curry. The ferns, known locally as paku, are simmered with a blend of spices such as turmeric, ginger, garlic, and chili, creating a savory and slightly spicy flavor. This dish is a unique part of Minangkabau cuisine, often served with rice, and is cherished for its earthy taste and the combination of tender ferns with a flavorful, creamy sauce. Gulai Paku reflects the region's creativity in using local ingredients.</p>
+        </li>
+        <li>
+           <h4>Karupuak Sanjai</h4>
+            <img src="images/karupuak sanjai.jpg" alt="karupuak sanjai" style="width:200px; height:auto; margin:10px 0;">
+            <p>Karupuak Sanjai is a traditional snack from West Sumatra, made from crispy cassava chips. The cassava is thinly sliced, fried until crunchy, and then seasoned with a spicy chili mixture, giving it a savory and slightly spicy flavor. This snack is a popular street food in Minangkabau culture, often enjoyed as a snack or appetizer. Karupuak Sanjai is loved for its crunchy texture and bold flavors, representing the region's rich culinary traditions and use of local ingredients.</p>
+        </li>
+        <li>
+           <h4>Bika Talago</h4>
+            <img src="images/bika talago.jpg" alt="bika talago" style="width:200px; height:auto; margin:10px 0;">
+            <p>Bika Talago is a traditional cake from West Sumatra, known for its soft, spongy texture and unique flavor. Made from rice flour, coconut milk, and sugar, it is baked to achieve a golden, slightly chewy consistency. This cake is infused with a hint of pandan, giving it a fragrant aroma. Bika Talago is a popular snack in Minangkabau cuisine, often served at celebrations or as a daily treat, representing the region's rich culinary heritage and creativity in using local ingredients.</p>
+        </li>
+        <li>
+           <h4>Gulai Cubadak</h4>
+            <img src="images/gulai cubadak.jpg" alt="gulai cubadak" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Cubadak is a traditional dish from West Sumatra, made with young jackfruit cooked in a flavorful coconut milk-based curry. The jackfruit is simmered with a blend of spices such as turmeric, ginger, and chili, creating a savory and mildly spicy dish. This dish is a staple in Minangkabau cuisine, often served with rice, and is valued for its tender texture and rich, aromatic sauce. Gulai Cubadak reflects the region's creative use of local ingredients in their culinary traditions.</p>
+        </li>
+        <li>
+           <h4>Sambalado Tanak</h4>
+            <img src="images/sambalado tanak.jpg" alt="sambalado tanak" style="width:200px; height:auto; margin:10px 0;">
+            <p>Sambalado Tanak is a traditional dish from West Sumatra, made with rice cooked with a spicy sambal sauce. The rice is mixed with a fiery sambal made from chilies, garlic, and other spices, creating a flavorful and spicy accompaniment to meals. Often served with side dishes like fried chicken or fish, Sambalado Tanak is a popular choice in Minangkabau cuisine, known for its bold, fiery flavor. This dish highlights the region’s love for spicy food and is cherished for its rich taste and heat.</p>
+        </li>
+        <li>
+           <h4>Katupek Gulai Paku</h4>
+            <img src="images/katupek gulai paku.jpg" alt="katupek gulai paku" style="width:200px; height:auto; margin:10px 0;">
+            <p>Katupek Gulai Paku is a traditional dish from West Sumatra, consisting of rice cakes (katupek) served with a rich, aromatic curry made from ferns (paku). The ferns are simmered in a coconut milk-based sauce, flavored with turmeric, ginger, and chili, creating a savory and slightly spicy dish. This meal is a beloved part of Minangkabau cuisine, often enjoyed during special occasions, and is known for its combination of tender ferns, creamy sauce, and the soft texture of rice cakes.</p>
+        </li>
+        <li>
+           <h4>Bubur Kampiun</h4>
+            <img src="images/bubur kampiun.jpg" alt="bubur kampiun" style="width:200px; height:auto; margin:10px 0;">
+            <p>Bubur Kampiun is a traditional dessert from West Sumatra, made with a sweet, warm porridge consisting of rice, coconut milk, and a variety of toppings. The dish is often served with a mix of fruits, sweet potatoes, and a drizzle of syrup, creating a rich, comforting flavor. Bubur Kampiun is a popular dessert during special occasions and celebrations, representing the region's love for sweet, hearty dishes. This dessert is cherished for its creamy texture and the balance of sweet and savory flavors.</p>
+        </li>
+        <li>
+           <h4>Kue Pinyaram</h4>
+            <img src="images/kue pinyaram.jpg" alt="kue pinyaram" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kue Pinyaram is a traditional sweet snack from West Sumatra, known for its crispy texture and slightly sweet flavor. Made from rice flour and coconut milk, the dough is fried into round, golden-brown cakes. Kue Pinyaram is often served as a dessert or snack, popular for its simple yet delicious taste. This cake reflects the region's culinary traditions, offering a crispy exterior with a soft and chewy inside, enjoyed by locals and visitors alike.</p>
+        </li>
+        <li>
+           <h4>Palai Rinuak</h4>
+            <img src="images/palai rinuak.jpg" alt="palai rinuak" style="width:200px; height:auto; margin:10px 0;">
+            <p>Palai Rinuak is a traditional snack from West Sumatra, made from small fish, typically anchovies (rinuak), marinated in spices, wrapped in banana leaves, and then grilled. The fish is seasoned with a blend of turmeric, garlic, and chili, creating a savory and mildly spicy flavor. Palai Rinuak is a popular dish in Minangkabau cuisine, often enjoyed as a snack or side dish, known for its smoky aroma and crispy texture, reflecting the region's love for flavorful, grilled foods.</p>
+        </li>
+        <li>
+           <h4>Gulai Jengkol</h4>
+            <img src="images/gulai jengkol.jpg" alt="gulai jengkol" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Jengkol is a traditional dish from West Sumatra, made with jengkol (a type of bean) cooked in a rich, aromatic coconut milk-based curry. The jengkol is simmered with a blend of spices such as turmeric, ginger, garlic, and chili, creating a savory and slightly spicy flavor. Known for its strong, distinctive taste, Gulai Jengkol is a popular dish in Minangkabau cuisine, often served with rice and appreciated for its unique texture and bold flavors.</p>
+        </li>
+        <li>
+           <h4>Kue Srikaya</h4>
+            <img src="images/kue srikaya.jpg" alt="kue srikaya" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kue Srikaya is a traditional dessert from West Sumatra, made from a combination of coconut milk, sugar, and eggs, resulting in a smooth, creamy custard-like texture. This cake is often steamed and has a sweet, rich flavor with a hint of pandan, giving it a fragrant aroma. Kue Srikaya is a beloved snack in Minangkabau cuisine, enjoyed for its delicate taste and soft, melt-in-your-mouth consistency, typically served during special occasions and gatherings.</p>
+        </li>
+        <li>
+           <h4>Kerupuk Jangek</h4>
+            <img src="images/kerupuk jangek.jpg" alt="kerupuk jangek" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kerupuk Jangek is a traditional snack from West Sumatra, made from beef tendon that is sliced, dried, and then fried to create a crispy texture. The crispy crackers are often seasoned with spices, giving them a savory, slightly chewy flavor. Kerupuk Jangek is a popular snack in Minangkabau cuisine, known for its unique taste and crunch, often enjoyed with rice or as a standalone snack. Its rich, savory profile reflects the region’s love for flavorful, fried treats.</p>
+        </li>
+        <li>
+           <h4>Gulai Cumi</h4>
+            <img src="images/gulai cumi.jpg" alt="gulai cumi" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Cumi is a traditional dish from West Sumatra, made with squid cooked in a rich, aromatic coconut milk-based curry. The squid is simmered with a blend of spices like turmeric, ginger, garlic, and chili, creating a savory and mildly spicy flavor. A popular dish in Minangkabau cuisine, Gulai Cumi is known for its tender squid and flavorful, creamy sauce, often served with rice and cherished for its delicious taste and aromatic spices.</p>
+        </li>
+        <li>
+           <h4>Kepiting Saus Padang</h4>
+            <img src="images/kepiting saus padang.jpg" alt="kepiting saus padang" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kepiting Saus Padang is a popular seafood dish from West Sumatra, featuring crab cooked in a rich, spicy, and tangy sauce. The crab is stir-fried with a blend of chili, garlic, ginger, and sweet soy sauce, creating a bold and flavorful dish. Known for its combination of heat and sweetness, Kepiting Saus Padang is a favorite in Minangkabau cuisine, often served with rice and enjoyed for its tender crab meat and aromatic, flavorful sauce.</p>
+        </li>
+        <li>
+           <h4>Gulai Daun Singkong</h4>
+            <img src="images/gulai daun singkong.jpg" alt="gulai daun singkong" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Daun Singkong is a traditional dish from West Sumatra made with cassava leaves cooked in a rich, coconut milk-based curry. The leaves are simmered with a blend of spices like turmeric, garlic, and chili, creating a savory and slightly spicy flavor. This dish is a staple in Minangkabau cuisine, known for its tender leaves and flavorful, creamy sauce, often served with rice and enjoyed for its comforting and aromatic taste.</p>
+        </li>
+        <li>
+           <h4>Gulai Kambing</h4>
+            <img src="images/gulai kambing2.jpg" alt="gulai kambing" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Kambing is a traditional goat curry from West Sumatra, celebrated for its rich and aromatic flavors. This dish features tender goat meat cooked in a thick, spicy coconut milk-based sauce, infused with a blend of local spices like turmeric, coriander, and lemongrass. Gulai Kambing is a staple in Minangkabau cuisine, often served at festive gatherings and special occasions. Known for its savory and slightly spicy taste, it represents the region's culinary expertise and vibrant food culture. This dish is cherished both locally and across Indonesia.</p>
+        </li>
+        <li>
+            <h4>Lemang</h4>
+            <img src="images/lemang.jpg" alt="lemang" style="width:200px; height:auto; margin:10px 0;">
+            <p>Lemang is a traditional dish from West Sumatra, made of glutinous rice cooked in coconut milk and then wrapped in bamboo. The bamboo is roasted over an open fire, imparting a smoky flavor to the rice. Lemang is often served with savory dishes like rendang or grilled meats, and is a popular food during celebrations and special occasions. Known for its unique texture and smoky aroma, Lemang is a beloved part of Minangkabau cuisine.</p>
+        </li>
+    </ul>
+</div>
+        <div id="riau-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Riau</h3>
+    <ul>
+        <li>
+           <h4>Sempolet</h4>
+            <img src="images/sempolet.jpg" alt="sempolet" style="width:200px; height:auto; margin:10px 0;">
+            <p>Sempolet is a traditional dish from Riau, made from cassava or sago cooked into a thick porridge. It is flavored with coconut milk, anchovies, and local spices, creating a savory and slightly smoky taste. Sempolet is a staple food in Riau, often served as a main dish, reflecting the region's reliance on sago as a primary ingredient. This dish is cherished for its hearty texture and unique flavor, showcasing the simplicity and richness of Riau's culinary heritage.</p>
+        </li>
+        <li>
+           <h4>Asam Pedas Baung</h4>
+            <img src="images/asam pedas baung.jpg" alt="asam pedas baung" style="width:200px; height:auto; margin:10px 0;">
+            <p>Asam Pedas Baung is a traditional dish from Riau, featuring catfish (baung) cooked in a spicy and tangy broth. The dish is made with tamarind, chili, and a blend of local spices, creating a bold and flavorful balance of heat and sourness. Asam Pedas Baung is a staple in Riau cuisine, often enjoyed with steamed rice. It is loved for its tender fish and the vibrant, aromatic taste of the broth, reflecting the region's love for spicy and sour flavors.</p>
+        </li>
+        <li>
+           <h4>Roti Jala</h4>
+            <img src="images/roti jala.jpg" alt="roti jala" style="width:200px; height:auto; margin:10px 0;">
+            <p>Roti Jala is a traditional dish from Riau, consisting of thin, net-like crepes made from a batter of flour, eggs, and coconut milk. The delicate crepes are often served with a flavorful curry, such as chicken or beef curry. Roti Jala is a popular dish during special occasions and celebrations, cherished for its soft texture and ability to complement rich, aromatic curries, showcasing the blend of Riau's culinary artistry and cultural heritage.</p>
+        </li>
+        <li>
+           <h4>Mie Sagu</h4>
+            <img src="images/mie sagu.jpg" alt="mie sagu" style="width:200px; height:auto; margin:10px 0;">
+            <p>Mie Sagu is a traditional dish from Riau, made from sago-based noodles stir-fried with garlic, chili, and local spices. Often paired with toppings like shrimp, anchovies, or vegetables, it has a chewy texture and a smoky, savory flavor. Mie Sagu is a staple in Riau cuisine, reflecting the region's reliance on sago as a primary ingredient. This dish is loved for its unique texture and simplicity, highlighting the culinary traditions of Riau.</p>
+        </li>
+        <li>
+           <h4>Lakse</h4>
+            <img src="images/lakse.jpg" alt="lakse" style="width:200px; height:auto; margin:10px 0;">
+            <p>Lakse is a traditional dish from Riau, consisting of rice flour noodles served in a rich, spicy coconut milk-based broth. The dish is flavored with a blend of local spices, creating a savory and aromatic taste. Often enjoyed as a comforting meal, Lakse reflects Riau's culinary heritage, combining soft, chewy noodles with a flavorful, creamy sauce that highlights the region's love for bold and hearty flavors.</p>
+        </li>
+        <li>
+           <h4>Gulai Belacan</h4>
+            <img src="images/gulai belacan.jpg" alt="gulai belacan" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Belacan is a traditional dish from Riau, made with seafood like prawns or fish cooked in a rich, spicy coconut milk-based curry infused with shrimp paste (belacan). The dish is seasoned with tamarind, chili, and aromatic spices, creating a bold, savory, and slightly tangy flavor. Gulai Belacan is a favorite in Riau cuisine, enjoyed for its creamy sauce and the depth of flavor brought by the shrimp paste, showcasing the region's love for robust and aromatic dishes.</p>
+        </li>
+        <li>
+           <h4>Sup Tunjang</h4>
+            <img src="images/sup tunjang.jpg" alt="sup tunjang" style="width:200px; height:auto; margin:10px 0;">
+            <p>Sup Tunjang is a traditional soup from Riau, made with tender cow's leg tendons (tunjang) simmered in a flavorful broth. The soup is seasoned with spices like ginger, garlic, and pepper, creating a savory and aromatic dish. Sup Tunjang is a popular choice in Riau cuisine, often served with steamed rice, and is loved for its rich, hearty flavor and the melt-in-your-mouth texture of the tendons.</p>
+        </li>
+        <li>
+           <h4>Asam Pedas Ikan Selais</h4>
+            <img src="images/asam pedas ikan selais.jpg" alt="asam pedas ikan selais" style="width:200px; height:auto; margin:10px 0;">
+            <p>Asam Pedas Ikan Selais is a traditional dish from Riau, featuring smoked selais fish cooked in a spicy and tangy broth. The dish is made with tamarind, chili, and a blend of local spices, creating a bold, aromatic flavor. Asam Pedas Ikan Selais is a beloved staple in Riau cuisine, known for the tender, smoky fish and the vibrant, flavorful sauce, perfectly paired with steamed rice. It reflects the region's appreciation for bold and distinctive tastes.</p>
+        </li>
+        <li>
+           <h4>Nasi Lemak</h4>
+            <img src="images/nasi lemak.jpg" alt="nasi lemak" style="width:200px; height:auto; margin:10px 0;">
+            <p>Nasi Lemak is a traditional dish from Riau, consisting of fragrant rice cooked in coconut milk and pandan leaves, served with various accompaniments like fried anchovies, boiled eggs, sambal, and peanuts. This dish is cherished for its rich, creamy rice and the balance of flavors from its savory and spicy side dishes. Nasi Lemak is a popular meal in Riau, often enjoyed for breakfast, showcasing the region's love for flavorful and aromatic cuisine.</p>
+        </li>
+        <li>
+           <h4>Kue Bangkit</h4>
+            <img src="images/kue bangkit.jpg" alt="kue bangkit" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kue Bangkit is a traditional cookie from Riau, made from sago flour, coconut milk, and sugar, resulting in a light, crumbly texture that melts in the mouth. This sweet treat is often enjoyed during festive occasions and celebrations. Kue Bangkit is a beloved snack in Riau cuisine, known for its delicate flavor and simplicity, reflecting the region's traditional baking heritage.</p>
+        </li>
+        <li>
+           <h4>Bolu Kemojo</h4>
+            <img src="images/bolu kemojo.jpg" alt="bolu kemojo" style="width:200px; height:auto; margin:10px 0;">
+            <p>Bolu Kemojo is a traditional cake from Riau, made with a mixture of eggs, sugar, coconut milk, and pandan leaves, giving it a fragrant aroma and vibrant green color. The cake has a soft, moist texture and is often enjoyed during special occasions. Bolu Kemojo is a popular dessert in Riau, known for its sweet flavor and delicate taste, reflecting the region's rich culinary traditions.</p>
+        </li>
+        <li>
+           <h4>Lempok Durian</h4>
+            <img src="images/lempok durian.jpg" alt="lempok durian" style="width:200px; height:auto; margin:10px 0;">
+            <p>Lempok Durian is a traditional sweet from Riau made by cooking durian pulp with sugar and a bit of salt until it thickens into a smooth, sticky paste. This treat has a rich, creamy texture and a strong durian flavor, making it a beloved snack in the region. Lempok Durian is often enjoyed as a dessert or gift, showcasing Riau's love for durian and its culinary creativity in making this unique, flavorful delicacy.</p>
+        </li>
+        <li>
+           <h4>Kue Asidah</h4>
+            <img src="images/kue asidah.jpg" alt="kue asidah" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kue Asidah is a traditional sweet from Riau, made from a mixture of flour, sugar, and coconut milk, then steamed to create a soft, spongy texture. Often flavored with pandan, it has a mildly sweet taste and is typically served during special occasions. Kue Asidah is cherished for its light, fluffy texture and delicate flavor, reflecting Riau’s rich culinary heritage.</p>
+        </li>
+        <li>
+           <h4>Cencalok</h4>
+            <img src="images/cencalok.jpg" alt="cencalok" style="width:200px; height:auto; margin:10px 0;">
+            <p>Cencalok is a traditional fermented shrimp paste from Riau, made by fermenting small shrimp with salt. It has a strong, savory flavor and is often used as a condiment or dip, typically served with rice or vegetables. Cencalok is a distinctive part of Riau's cuisine, valued for its umami taste and its role in enhancing the flavor of many dishes.</p>
+        </li>
+        <li>
+           <h4>Asam Padeh</h4>
+            <img src="images/asam padeh.jpg" alt="asam padeh" style="width:200px; height:auto; margin:10px 0;">
+            <p>Asam Padeh is a traditional dish from Riau and Kepulauan Riau, featuring fish cooked in a tangy and spicy broth made with tamarind, chili, and a blend of aromatic spices. The dish is known for its bold, sour, and spicy flavors, which pair perfectly with steamed rice. Asam Padeh is a beloved staple in Riau cuisine, reflecting the region’s love for flavorful, sour dishes.</p>
+        </li>
+        <li>
+           <h4>Air Mata Pengantin</h4>
+            <img src="images/air mata pengantin.jpg" alt="air mata pengantin" style="width:200px; height:auto; margin:10px 0;">
+            <p>Air Mata Pengantin is a traditional dessert from Riau, made of glutinous rice flour, coconut milk, and sugar, shaped into small round dumplings. The dumplings are cooked in a sweet syrup, resulting in a soft, chewy texture. Known for its sweet and rich flavor, Air Mata Pengantin is a popular treat in Riau, often served during special occasions and celebrations, symbolizing happiness and joy.</p>
+        </li>
+        <li>
+            <h4>Gulai Ikan Patin</h4>
+            <img src="images/gulai ikan patin.jpg" alt="gulai ikan patin" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Ikan Patin is a traditional dish from Riau, featuring patin fish cooked in a rich, spiced coconut milk gravy. The dish is flavored with turmeric, ginger, and other aromatic spices, creating a savory and slightly spicy taste. Gulai Ikan Patin is a popular and beloved dish in Riau, known for its tender fish and flavorful, creamy sauce, often enjoyed with steamed rice.</p>
+        </li>
+    </ul>
+</div>
+        <div id="kepri-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Kepulauan Riau</h3>
+    <ul>
+        <li>
+           <h4>Otak-Otak</h4>
+            <img src="images/otak otak.jpg" alt="otak otak" style="width:200px; height:auto; margin:10px 0;">
+            <p>Otak-Otak is a traditional snack from the Kepulauan Riau, made from a mixture of fish paste, coconut milk, and spices, wrapped in banana leaves and grilled. The dish has a soft, flavorful texture with a smoky aroma from the grilling process. Otak-Otak is a beloved delicacy in the Riau Islands, often enjoyed with a tangy peanut or chili sauce, showcasing the region’s rich seafood heritage.</p>
+        </li>
+        <li>
+           <h4>Asam Padeh</h4>
+            <img src="images/asam padeh.jpg" alt="asam padeh" style="width:200px; height:auto; margin:10px 0;">
+            <p>Asam Padeh is a traditional dish from Riau and Kepulauan Riau, featuring fish cooked in a tangy and spicy broth made with tamarind, chili, and a blend of aromatic spices. The dish is known for its bold, sour, and spicy flavors, which pair perfectly with steamed rice. Asam Padeh is a beloved staple in Riau cuisine, reflecting the region’s love for flavorful, sour dishes.</p>
+        </li>
+        <li>
+           <h4>Gonggong</h4>
+            <img src="images/gonggong.jpg" alt="gonggong" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gonggong is a traditional seafood delicacy from the Kepulauan Riau, made from sea snails native to the region. The snails are typically boiled and served with a flavorful dipping sauce, highlighting their tender, slightly chewy texture and mild taste. Gonggong is a signature dish in the Riau Islands, cherished for its simplicity and connection to the region’s rich maritime heritage.</p>
+        </li>
+        <li>
+           <h4>Mie Lendir</h4>
+            <img src="images/mie lendir.jpg" alt="mie lendir" style="width:200px; height:auto; margin:10px 0;">
+            <p>Mie Lendir is a traditional noodle dish from the Kepulauan Riau, featuring yellow noodles served in a thick, savory peanut-based gravy. Topped with boiled eggs, bean sprouts, and fried shallots, the dish offers a rich, creamy flavor with a hint of spice. Mie Lendir is a popular comfort food in the Riau Islands, celebrated for its hearty texture and unique, flavorful sauce.</p>
+        </li>
+        <li>
+           <h4>Sotong Masak Hitam</h4>
+            <img src="images/sotong masak hitam.jpg" alt="sotong masak hitam" style="width:200px; height:auto; margin:10px 0;">
+            <p>Sotong Masak Hitam is a traditional dish from the Kepulauan Riau, made with squid cooked in its own ink, along with aromatic spices. The dish has a rich, savory flavor with a slightly briny taste and a dark, glossy appearance. Sotong Masak Hitam is a unique and beloved dish in the Riau Islands, reflecting the region's maritime culture and love for seafood delicacies.</p>
+        </li>
+        <li>
+           <h4>Tepung Gomak</h4>
+            <img src="images/tepung gomak.jpg" alt="tepung gomak" style="width:200px; height:auto; margin:10px 0;">
+            <p>Tepung Gomak is a traditional snack from the kepulauan Riau, made from glutinous rice flour filled with sweet mung bean paste and coated with grated coconut. The soft, chewy texture and sweet, nutty flavor make it a favorite treat. Tepung Gomak is often called "Indonesian mochi" and is cherished for its simplicity and connection to the region's culinary traditions.</p>
+        </li>
+        <li>
+           <h4>Luti Gendang</h4>
+            <img src="images/luti gendang.jpg" alt="luti gendang" style="width:200px; height:auto; margin:10px 0;">
+            <p>Luti Gendang is a traditional snack from the Kepulauan Riau, consisting of soft, fried bread filled with a savory spiced fish or chicken filling. The combination of the fluffy bread and flavorful filling makes it a popular choice for breakfast or as a snack. Luti Gendang is beloved in the Riau Islands for its simplicity and delicious taste, reflecting the region’s culinary creativity.</p>
+        </li>
+        <li>
+           <h4>Lendot</h4>
+            <img src="images/lendot.jpg" alt="lendot" style="width:200px; height:auto; margin:10px 0;">
+            <p>Lendot is a traditional dish from the Kepulauan Riau, made from a thick, starchy gravy cooked with vegetables like kale and okra, often complemented by shrimp or fish. The dish has a sticky texture and savory flavor, usually enjoyed with rice. Lendot is cherished in the Riau Islands for its hearty and unique consistency, reflecting the region's love for comforting, home-style meals.</p>
+        </li>
+        <li>
+           <h4>Kue Batang Buruk</h4>
+            <img src="images/kue batang buruk.jpg" alt="kue batang buruk" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kue Batang Buruk is a traditional snack from the Kepulauan Riau, made from a crispy pastry shell filled with sweet, powdered mung bean filling. The snack is known for its crumbly texture and melt-in-your-mouth sensation. Kue Batang Buruk is often served during festive occasions and is cherished in the Riau Islands for its delicate flavor and cultural significance.</p>
+        </li>
+        <li>
+           <h4>Kue Deram-Deram</h4>
+            <img src="images/kue deram deram.jpg" alt="kue deram deram" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kue Deram-Deram is a traditional snack from the Kepulauan Riau, made from rice flour, palm sugar, and coconut milk, deep-fried to create a golden, sweet, and crispy treat. The snack is loved for its simplicity and rich caramel-like flavor. Kue Deram-Deram is a popular delicacy, often enjoyed with tea, reflecting the region’s traditional culinary heritage.</p>
+        </li>
+        <li>
+           <h4>Kerang Bulu</h4>
+            <img src="images/kerang bulu.jpg" alt="kerang bulu" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kerang Bulu is a traditional seafood dish from the Kepulauan Riau, featuring hairy clams cooked with aromatic spices or served simply boiled with dipping sauces. Known for their tender texture and briny flavor, Kerang Bulu is a favorite among seafood lovers and showcases the rich maritime culture of the Riau Islands.</p>
+        </li>
+        <li>
+           <h4>Roti Kirai</h4>
+            <img src="images/roti kirai.jpg" alt="roti kirai" style="width:200px; height:auto; margin:10px 0;">
+            <p>Roti Kirai is a traditional pastry from the Kepulauan Riau, made by twisting dough into a spiral shape and frying it until golden and crispy. Often served with a sweet syrup or coconut filling, Roti Kirai is a popular snack known for its crunchy texture and rich, sweet flavor, reflecting the region's culinary traditions.</p>
+        </li>
+        <li>
+           <h4>Kerupuk Atom</h4>
+            <img src="images/kerupuk atom.jpg" alt="kerupuk atom" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kerupuk Atom is a traditional snack from Kepulauan Riau, made from rice flour, shrimp, and various spices. The dough is shaped into small, round pieces and deep-fried until crispy. Known for its light, crunchy texture and savory flavor, Kerupuk Atom is a popular snack in the region, often enjoyed as a side dish or appetizer, showcasing the local love for seafood-based treats.</p>
+        </li>
+        <li>
+           <h4>Nasi Dagang</h4>
+            <img src="images/nasi dagang.jpg" alt="nasi dagang" style="width:200px; height:auto; margin:10px 0;">
+            <p>Nasi Dagang is a traditional dish from the Kepulauan Riau, consisting of steamed rice cooked with coconut milk, giving it a rich, creamy flavor. Typically served with fish curry, Nasi Dagang is a beloved meal known for its aromatic taste and cultural significance, often enjoyed during special occasions and gatherings in the region.</p>
+        </li>
+        <li>
+           <h4>Tumis Kangkung Belacan</h4>
+            <img src="images/tumis kangkung belacan.jpg" alt="tumis kangkung belacan" style="width:200px; height:auto; margin:10px 0;">
+            <p>Tumis Kangkung Belacan is a popular dish from the Kepulauan Riau, featuring water spinach stir-fried with shrimp paste (belacan) and aromatic spices. The dish is known for its savory, slightly spicy flavor and vibrant green color. Tumis Kangkung Belacan is a beloved side dish in the Riau Islands, often enjoyed with rice and reflecting the region’s rich use of local ingredients.</p>
+        </li>
+        <li>
+            <h4>Laksa Kepulauan Riau</h4>
+            <img src="images/laksa kepulauan riau.jpg" alt="laksa kepulauan riau" style="width:200px; height:auto; margin:10px 0;">
+            <p>Laksa Kepulauan Riau is a traditional noodle dish from the Kepulauan Riau, made with rice noodles served in a rich, spicy coconut milk-based soup, often with seafood like shrimp or fish. Known for its bold, savory flavor with a hint of spiciness, Laksa Kepulauan Riau is a popular and comforting dish that reflects the region’s maritime influence and love for flavorful, aromatic soups.</p>
+        </li>
+    </ul>
+</div>
+        <div id="jambi-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Jambi</h3>
+    <ul>
+        <li>
+           <h4>Sup Tulang</h4>
+            <img src="images/sup tulang.jpg" alt="sup tulang" style="width:200px; height:auto; margin:10px 0;">
+            <p>Sup Tulang is a traditional dish from Jambi, made from beef bones simmered in a flavorful broth with spices, herbs, and vegetables. Known for its rich, savory taste, Sup Tulang is enjoyed for its tender meat and hearty broth, often served as a comforting meal in Jambi, reflecting the region’s love for flavorful, bone-based soups.</p>
+        </li>
+        <li>
+           <h4>Gulai Tepek Ikan</h4>
+            <img src="images/gulai tepek ikan.jpg" alt="gulai tepek ikan" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Tepek Ikan is a traditional dish from Jambi, made from fish cooked in a rich, spiced coconut milk gravy. The dish is known for its bold and aromatic flavor, with the fish absorbing the savory, slightly spicy sauce. Gulai Tepek Ikan is a popular and comforting meal in Jambi, reflecting the region’s culinary heritage of flavorful, coconut-based dishes.</p>
+        </li>
+        <li>
+           <h4>Tempoyak</h4>
+            <img src="images/tempoyak.jpg" alt="tempoyak" style="width:200px; height:auto; margin:10px 0;">
+            <p>Tempoyak is a traditional dish from Jambi, made from fermented durian. The fermented durian is typically used as a condiment or cooked with spices, often paired with fish or other meats. Known for its strong, tangy flavor, Tempoyak is a beloved delicacy in Jambi, reflecting the region's unique use of durian in savory dishes.</p>
+        </li>
+        <li>
+           <h4>Pempek Sambal</h4>
+            <img src="images/pempek sambal.jpg" alt="pempek sambal" style="width:200px; height:auto; margin:10px 0;">
+            <p>Pempek Sambal is a traditional snack from Jambi, consisting of fish cakes made from a mixture of fish and tapioca flour, served with a spicy and tangy sambal sauce. Known for its chewy texture and bold, savory flavor, Pempek Sambal is a popular dish in Jambi, often enjoyed as a snack or appetizer, reflecting the region's love for fish-based delicacies.</p>
+        </li>
+        <li>
+           <h4>Nasi Gemuk</h4>
+            <img src="images/nasi gemuk.jpg" alt="nasi gemuk" style="width:200px; height:auto; margin:10px 0;">
+            <p>Nasi Gemuk is a traditional dish from Jambi, consisting of rice cooked with coconut milk, giving it a rich and creamy texture. Often served with fried chicken, sambal, and vegetables, Nasi Gemuk is known for its hearty, flavorful profile and is a beloved comfort food in Jambi, reflecting the region's use of coconut-based ingredients in everyday meals.</p>
+        </li>
+        <li>
+           <h4>Daging Masak Hitam</h4>
+            <img src="images/daging masak hitam.jpg" alt="daging masak hitam" style="width:200px; height:auto; margin:10px 0;">
+            <p>Daging Masak Hitam is a traditional dish from Jambi, made of beef slow-cooked in a dark, rich sauce of spices, soy sauce, and coconut milk. Known for its deep, savory flavor with a hint of sweetness, Daging Masak Hitam is a popular dish in Jambi, often enjoyed with rice, and showcases the region's mastery of bold and aromatic cooking techniques.</p>
+        </li>
+        <li>
+           <h4>Kue Padamaran</h4>
+            <img src="images/kue padamaran.jpg" alt="kue padamaran" style="width:200px; height:auto; margin:10px 0;">
+            <p>Kue Padamaran is a traditional sweet snack from Jambi, made from a mixture of glutinous rice flour, coconut, and palm sugar. The dough is shaped into small cakes and steamed, resulting in a soft, chewy texture. Kue Padamaran is known for its sweet and slightly savory flavor, making it a beloved treat in Jambi, often enjoyed during special occasions and celebrations.</p>
+        </li>
+        <li>
+           <h4>Kue Putri Kandis</h4>
+            <img src="images/kue putri kandis.jpg" alt="kue putri kandis" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Kue Muso</h4>
+            <img src="images/kue muso.jpg" alt="kue muso" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Dodol Kentang Kerinci</h4>
+            <img src="images/Dodol Kentang Kerinci.jpg" alt="Dodol Kentang Kerinci" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Gulai Terjun</h4>
+            <img src="images/gulai terjun.jpg" alt="gulai terjun" style="width:200px; height:auto; margin:10px 0;">
+            <p>Gulai Terjun is a traditional dish from Jambi, made from fish, usually catfish, cooked in a rich, spicy coconut milk-based curry. Known for its tangy and savory flavor, Gulai Terjun is a beloved dish in Jambi, often served with rice, showcasing the region's fondness for flavorful and aromatic seafood dishes.</p>
+        </li>
+    </ul>
+</div>
+        <div id="sumsel-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Sumatera Selatan</h3>
+    <ul>
+        <li>
+           <h4>Kue Delapan Jam</h4>
+            <img src="images/kue delapan jam.jpg" alt="kue delapan jam" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Ikan Salai</h4>
+            <img src="images/ikan salai2.jpg" alt="ikan salai" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Pempek Palembang</h4>
+            <img src="images/pempek palembang.jpg" alt="pempek palembang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Tekwan</h4>
+            <img src="images/tekwan.jpg" alt="tekwan" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Lakso Palempang</h4>
+            <img src="images/lakso palembang.jpg" alt="lakso palembang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Laksan</h4>
+            <img src="images/laksan.jpg" alt="laksan" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Celimpungan</h4>
+            <img src="images/celimpungan.jpg" alt="celimpungan" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Pindang Patin</h4>
+            <img src="images/pindang patin.jpg" alt="pindang patin" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Pindang Tulang</h4>
+            <img src="images/pindang tulang.jpg" alt="pindang tulang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Burgo</h4>
+            <img src="images/burgo.jpg" alt="burgo" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Model</h4>
+            <img src="images/model.jpg" alt="model" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Martabak HAR</h4>
+            <img src="images/martabak har.jpg" alt="martabak har" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Mie Celor</h4>
+            <img src="images/mie celor.jpg" alt="mie celor" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Lenggang</h4>
+            <img src="images/lenggang.jpg" alt="lenggang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Kerupuk Kemplang</h4>
+            <img src="images/kerupuk kemplang.jpg" alt="kerupuk kemplang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Engkak Ketan</h4>
+            <img src="images/engkak ketan.jpg" alt="engkak ketan" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Kue Maksuba</h4>
+            <img src="images/kue maksuba.jpg" alt="kue maksuba" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Otak-Otak Palembang</h4>
+            <img src="images/otak otak palembang.jpg" alt="otak otak palembang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Gulo Puan</h4>
+            <img src="images/gulo puan.jpg" alt="gulo puan" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Sambal Tempoyak</h4>
+            <img src="images/sambal tempoyak.jpg" alt="sambal tempoyak" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Pempek Panggang</h4>
+            <img src="images/pempek panggang.jpg" alt="pempek panggang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Bekasam</h4>
+            <img src="images/bekasam.jpg" alt="bekasam" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Malbi</h4>
+            <img src="images/malbi.jpg" alt="malbi" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+    </ul>
+</div>
+        <div id="lampung-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Lampung</h3>
+    <ul>
+        <li>
+           <h4>Tempoyak</h4>
+            <img src="images/tempoyak.jpg" alt="tempoyak" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Gulai Tempoyak</h4>
+            <img src="images/gulai tempoyak.jpg" alt="gulai tempoyak" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Gulai Taboh</h4>
+            <img src="images/gulai taboh.jpg" alt="gulai taboh" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Keripik Pisang</h4>
+            <img src="images/keripik pisang.jpg" alt="keripik pisang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Sambal Lampung</h4>
+            <img src="images/sambal lampung.jpg" alt="sambal lampung" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Engkak Ketan</h4>
+            <img src="images/engkak ketan.jpg" alt="engkak ketan" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+    </ul>
+</div>
+        <div id="babel-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Bangka Belitung</h3>
+    <ul>
+        <li>
+           <h4>Lakse</h4>
+            <img src="images/lakse.jpg" alt="lakse" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Kricu</h4>
+            <img src="images/kricu.jpg" alt="kricu" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Lempah Kuning</h4>
+            <img src="images/lempah kuning.jpg" alt="lempah kuning" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Pantiaw</h4>
+            <img src="images/pantiaw.jpg" alt="pantiaw" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Otak-Otak Bangka</h4>
+            <img src="images/otak otak bangka.jpg" alt="otak otak bangka" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Mie Koba</h4>
+            <img src="images/mie koba.jpg" alt="mie koba" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Martabak Bangka</h4>
+            <img src="images/martabak bangka.jpg" alt="martabak bangka" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Getas Bangka</h4>
+            <img src="images/getas bangka.jpg" alt="getas bangka" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Kue Jongkong</h4>
+            <img src="images/kue jongkong.jpg" alt="kue jongkong" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Bong Li Piang</h4>
+            <img src="images/bong li piang.jpg" alt="bong li piang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Kue Rintak</h4>
+            <img src="images/kue rintak.jpg" alt="kue rintak" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Sambal Lingkung</h4>
+            <img src="images/sambal lingkung.jpg" alt="sambal lingkung" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Lempok Cempedak</h4>
+            <img src="images/lempok cempedak.jpg" alt="lempok cempedak" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Rusip</h4>
+            <img src="images/rusip.jpg" alt="rusip" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Gangan</h4>
+            <img src="images/gangan.jpg" alt="gangan" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Kue Pelite</h4>
+            <img src="images/kue pelite.jpg" alt="kue pelite" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Ikan Bakar Bedulang</h4>
+            <img src="images/ikan bakar bedulang.jpg" alt="ikan bakar bedulang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Nasi Gemok</h4>
+            <img src="images/nasi gemok.jpg" alt="nasi gemok" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Lempah Darat</h4>
+            <img src="images/lempah darat.jpg" alt="lempah darat" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Lakso Bangka</h4>
+            <img src="images/lakso bangka.jpg" alt="lakso bangka" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+    </ul>
+</div>
+        <div id="bengkulu-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Bengkulu</h3>
+    <ul>
+        <li>
+           <h4>Pendap</h4>
+            <img src="images/pendap.jpg" alt="pendap" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Kue Lapis Bengkulu</h4>
+            <img src="images/kue lapis bengkulu.jpg" alt="kue lapis bengkulu" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Gulai Pisang</h4>
+            <img src="images/gulai pisang.jpg" alt="gulai pisang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Bagaryu</h4>
+            <img src="images/bagaryu.jpg" alt="bagaryu" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Lema</h4>
+            <img src="images/lema.jpg" alt="lema" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Bay Tat</h4>
+            <img src="images/bay tat.jpg" alt="bay tat" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Gulai Kemba'ang</h4>
+            <img src="images/gulai kemba'ang.jpg" alt="gulai kemba'ang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Rebung Asam Undak Liling</h4>
+            <img src="images/rebung asam undak liling.jpg" alt="rebung asam undak liling" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Sirup Kalamansi</h4>
+            <img src="images/sirup kalamansi.jpg" alt="sirup kalamansi" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Lepek Binti</h4>
+            <img src="images/lepek binti.jpg" alt="lepek binti" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Kue Perut Punai</h4>
+            <img src="images/kue perut punai.jpg" alt="kue perut punai" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Lontong Tunjang</h4>
+            <img src="images/lontong tunjang.jpg" alt="lontong tunjang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Pisang Karamel Bengkulu</h4>
+            <img src="images/pisang karamel bengkulu.jpg" alt="pisang karamel bengkulu" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+           <h4>Nasi Liwet Bengkulu</h4>
+            <img src="images/nasi liwet bengkulu.jpg" alt="nasi liwet bengkulu" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+    </ul>
+</div>
+
+        <!-- Daftar Provinsi dan Makanan Jawa -->
+        <div id="jawa-provinces" class="province-list" style="display: none;">
+            <h3>Provinsi di Jawa</h3>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showFoods('banten')">Banten</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('jakarta')">Jakarta</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('jabar')">Jawa Barat</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('jateng')">Jawa Tengah</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('jogja')">Yogyakarta</a></li>
+                <li><a href="javascript:void(0);" onclick="showFoods('jatim')">Jawa Timur</a></li>
+            </ul>
+        </div>
+        <div id="banten-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Banten</h3>
+    <ul>
+        <li>
+            <h4>Sate Bandeng</h4>
+            <img src="images/sate bandeng.jpg" alt="sate bandeng" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Nasi Sumsum</h4>
+            <img src="images/nasi sumsum.jpg" alt="nasi sumsum" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Emping Menes</h4>
+            <img src="images/emping menes.jpg" alt="emping menes" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Ketan Bintul</h4>
+            <img src="images/ketan bintul.jpg" alt="ketan bintul" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Sate Bebek Cibeber</h4>
+            <img src="images/sate Bebek Cibeber.jpg" alt="sate Bebek Cibeber" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Laksa Tangerang</h4>
+            <img src="images/laksa tangerang.jpg" alt="laksa tangerang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Angeun Lada</h4>
+            <img src="images/angeun lada.jpg" alt="angeun lada" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Nasi Uduk Serang</h4>
+            <img src="images/nasi uduk serang.jpg" alt="nasi uduk serang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Pecak Bandeng</h4>
+            <img src="images/pecak bandeng.jpg" alt="pecak bandeng" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Ceplis</h4>
+            <img src="images/ceplis.jpg" alt="ceplis" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Gipang</h4>
+            <img src="images/gipang.jpg" alt="gipang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Balok Menes</h4>
+            <img src="images/balok menes.jpg" alt="balok menes" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Apem Putih</h4>
+            <img src="images/apem putih.jpg" alt="apem putih" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Cucur Banten</h4>
+            <img src="images/cucur banten.jpg" alt="cucur banten" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Bakso Bakar Banten</h4>
+            <img src="images/bakso bakar banten.jpg" alt="bakso bakar banten" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Durian Kadu</h4>
+            <img src="images/durian kadu.jpg" alt="durian kadu" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Pecak Gurame</h4>
+            <img src="images/ceplis.jpg" alt="ceplis" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Rabeg</h4>
+            <img src="images/rabeg.jpg" alt="rabeg" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+    </ul>
+</div>
+        <div id="jakarta-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Jakarta</h3>
+    <ul>
+        <li>
+            <h4>Kerak Telor</h4>
+            <img src="images/kerak telor.jpg" alt="kerak telor" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Nasi Uduk</h4>
+            <img src="images/nasi udug.jpg" alt="nasi udug" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Soto Betawi</h4>
+            <img src="images/soto betawi.jpg" alt="soto betawi" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+    </ul>
+</div>
+        <div id="jabar-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Jawa Barat</h3>
+    <ul>
+        <li>
+            <h4>Nasi Timbel</h4>
+            <img src="images/nasi timbel.jpg" alt="nasi timbel" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Karedok</h4>
+            <img src="images/karedok.jpg" alt="karedok" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Soto Bandung</h4>
+            <img src="images/soto bandung.jpg" alt="soto bandung" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+    </ul>
+</div>
+        <div id="jateng-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Jawa Tengah</h3>
+    <ul>
+        <li>
+            <h4>Soto Semarang</h4>
+            <img src="images/soto semarang.jpg" alt="soto semarang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Lumpia Semarang</h4>
+            <img src="images/lumpia semarang.jpg" alt="lumpia semarang" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Tahu Gimbal</h4>
+            <img src="images/tahu gimbal.jpg" alt="tahu gimbal" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+    </ul>
+</div>
+        <div id="jogja-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Yogyakarta</h3>
+    <ul>
+        <li>
+            <h4>Gudeg</h4>
+            <img src="images/gudeg.jpg" alt="gudeg" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Sate Klathak</h4>
+            <img src="images/sate klathak.jpg" alt="sate klathak" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Bakpia Pathok</h4>
+            <img src="images/bakpia pathok.jpg" alt="bakpia pathok" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+    </ul>
+</div>
+        <div id="jatim-foods" class="food-list" style="display: none;">
+    <h3>Makanan Tradisional Jawa Timur</h3>
+    <ul>
+        <li>
+            <h4>Rawon</h4>
+            <img src="images/rawon.jpg" alt="rawon" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Rujak Cingur</h4>
+            <img src="images/rujak cingur.jpg" alt="rujak cingur" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+        <li>
+            <h4>Soto Lamongan</h4>
+            <img src="images/soto lamongan.jpg" alt="soto lamongan" style="width:200px; height:auto; margin:10px 0;">
+            <p></p>
+        </li>
+    </ul>
+</div>
+
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: noviasiska9200@gmail.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 noviasiska9200@gmail.com</p>
+    </footer>
+
+    <script>
+        function showProvinces(pulauId) {
+            const allProvinces = document.querySelectorAll('.province-list');
+            allProvinces.forEach(province => province.style.display = 'none');
+            const selectedProvince = document.getElementById(pulauId + '-provinces');
+            if (selectedProvince) selectedProvince.style.display = 'block';
+        }
+
+        function showFoods(provinceId) {
+            const allFoods = document.querySelectorAll('.food-list');
+            allFoods.forEach(food => food.style.display = 'none');
+            const selectedFood = document.getElementById(provinceId + '-foods');
+            if (selectedFood) selectedFood.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

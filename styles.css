@@ -1,0 +1,192 @@
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: url('images/Desain tanpa judul.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* Styling untuk Pulau */
+.island-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.island {
+    margin: 15px;
+    text-align: center;
+}
+
+.island img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.island img:hover {
+    transform: scale(1.1);
+}
+
+.island p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Styling untuk Provinsi */
+.province-list {
+    display: none;
+    padding: 0;
+}
+
+.province-list h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.province-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.province-list ul li {
+    margin: 10px 0;
+}
+
+.province-list ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+.province-list ul li a:hover {
+    color: #008CBA;
+}
+
+/* Styling untuk Daftar Makanan */
+.food-list {
+    display: none;
+    padding: 0;
+}
+
+.food-list h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.food-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.food-list ul li {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+}
+
+.food-list ul li h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    flex: 1;
+}
+
+.food-list ul li img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-list ul li p {
+    font-size: 0.9rem;
+    color: #666;
+    flex: 3;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .island-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .island img {
+        width: 100%;
+        height: auto;
+    }
+.food-list img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.food-list h4 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.food-list p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
